@@ -13,8 +13,11 @@ author: "Susana Casanova"
 tags: [AI, SaaS]
 ---
 
-## Guía de sobrendeudamiento
-Como responsable de la creación de la metodología, reuniones de trabajo con actores involucrados, verificación de la recopilación de información y revisión de las piezas gráficas, desempeñé un papel esencial en este proyecto.  ¿Qué es? Informativo amigable para evitar el sobrendeudamiento, mediante la identificación y educación de las tasas de interés, cuotas y pagos mínimos.
+## Over-Indebtedness Guide:
 
-Mas información en: 
+I was responsible for developing the methodology, coordinating meetings with stakeholders, verifying data collection, and reviewing graphic elements, all of which were essential to this project. 
+What is it? 
+This user-friendly guide is designed to help prevent over-indebtedness by educating consumers on interest rates, installment payments, and minimum payment requirements.
+
+Further details at:
 - https://www.gob.pe/institucion/indecopi/noticias/682412-compras-al-credito-como-evitar-las-deudas-en-estas-fiestas

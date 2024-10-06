@@ -14,10 +14,11 @@ author: "Susana Casanova"
 tags: [data, analytics, SaaS]
 ---
 
-## Evaluación de impacto de los programas sociales FISE de OSINERGMIN
+## Impact Assessment of OSINERGMIN's FISE Social Programs:
 
-Realicé la evaluación exhaustiva del impacto de los programas sociales FISE de OSINERGMIN.
-¿Qué es? Un análisis completo que abarca desde la metodología hasta la implementación de modelos econométricos, centrándose en el efecto del Vale de descuento del Fondo de Inclusión Social Energético entre 2007 y 2015 sobre el consumo de biomasa.
+I conducted a thorough evaluation of the FISE social programs by OSINERGMIN. 
+What is it? 
+This analysis spans the entire process, from methodology to the implementation of econometric models, with a specific focus on assessing the impact of the Energy Inclusion Fund's discount voucher on biomass consumption from 2007 to 2015.
 
-Mas informacion en: 
+Further details at: 
 - https://tesis.pucp.edu.pe/repositorio/handle/20.500.12404/23997

@@ -13,7 +13,8 @@ author: "Susana Casanova"
 tags: [data, analytics, SaaS]
 ---
 
-## Rastreo del número de trabajadores SUNAT
+## Tracking Employee Numbers from SUNAT:
 
-Se identificó un problema de extracción de datos y automaticé la forma de rastrear el número de trabajadores de miles de empresas formales desde la página web de SUNAT, reduciendo las horas hombre. 
-¿Qué es? Propuesta interna que mediante códigos en Python permite automatizar la recopilación del número de trabajadores de SUNAT por empresas, mediante un solo click.
+I addressed a data extraction challenge by automating the tracking of employee numbers for thousands of formal companies via the SUNAT website, which significantly decreased manual labor hours. 
+What is it? 
+This internal project employs Python scripts to streamline the collection of employee data from SUNAT for each company with just one click.

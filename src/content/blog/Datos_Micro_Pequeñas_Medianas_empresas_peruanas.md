@@ -15,9 +15,11 @@ author: "Susana Casanova"
 tags: [data, analytics, SaaS]
 ---
 
-## Datos de las micro, pequeñas y medianas empresas peruanas
+## Data on Micro, Small, and Medium Enterprises in Peru:
 
-Formé parte del equipo de elaboración, trabajando la información integral de comercio exterior y de la informalidad en las Mipyme peruanas al 2022.
-¿Qué es? Un compendio detallado que aborda diversos aspectos económicos clave de las MIPYME en el país, desde su contribución económica hasta su participación en el comercio exterior, su estructura empresarial, entre otros.
-Mas informacion es: 
+I was part of a team that compiled comprehensive data on foreign trade and informality among Peruvian micro, small, and medium enterprises (MSEs) as of 2022. 
+What is it? 
+This detailed report examines various key economic aspects of MSEs in the country, including their economic contributions, involvement in foreign trade, and organizational structure, among others.
+
+Further details at:
 - https://ogeiee.produce.gob.pe/index.php/en/shortcode/oee-documentos-publicaciones/publicaciones-anuales/item/1170-las-mipyme-en-cifras-2022

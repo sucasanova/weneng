@@ -14,6 +14,8 @@ author: "Susana Casanova"
 tags: [data, analytics, SaaS]
 ---
 
-## Rastreo de base de mineras- Reinfo
-Se identificó un problema de extracción de datos y automaticé la forma de rastrear las bases de datos que no se podían extraer desde la página de REINFO, reduciendo las horas hombre. 
-¿Qué es? Propuesta interna que mediante códigos en Python permite la recopilación de la base de datos de empresas en REINFO (Registro Integral de Formalización Minera), mediante un solo click.
+## Tracking Mining Databases - REINFO:
+
+I identified a data extraction issue and automated the process for tracking databases that couldn't be accessed from the REINFO website, greatly reducing manual labor hours. 
+What is it? 
+This internal initiative uses Python scripts to streamline the collection of company data from REINFO (Comprehensive Mining Formalization Registry) with just one click.

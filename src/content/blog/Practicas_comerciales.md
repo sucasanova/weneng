@@ -14,10 +14,11 @@ author: "Susana Casanova"
 tags: [webdev, tailwindcss, frontend]
 ---
 
-## Practicas comerciales 
+## Business Practices:
 
-Como responsable de la creación del tablero interactivo y la revisión de la recolección de datos, desempeñé un papel esencial en este proyecto.
-¿Qué es? Este proyecto del Indecopi tiene como objetivo proteger a los consumidores que compran productos y servicios en línea. Realizamos monitoreos en las páginas web de las principales empresas participantes en eventos como CYBER WOW para recopilar prácticas comerciales que podrían influir en el comportamiento del consumidor al proporcionar datos personales, realizar compras o aceptar cargos adicionales.
+I was responsible for creating the interactive dashboard and overseeing data collection, playing a key role in this project.
+What is it?
+This initiative, developed by INDECOPI, aims to protect consumers purchasing products and services online. We conducted monitoring of the websites of major companies participating in events like CYBER WOW to collect data on business practices that could affect consumer behavior regarding personal data, purchasing decisions, or acceptance of additional charges.
 
-Mayor informacion en: 
+Further details at:
 - https://bit.ly/Practicas_comerciales

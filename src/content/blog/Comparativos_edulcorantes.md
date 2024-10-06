@@ -13,10 +13,11 @@ author: "Susana Casanova"
 tags: [AI, SaaS]
 ---
 
-## Comparativo de edulcorantes
+## Comparison of Sweeteners:
 
-Como responsable de la creación de la metodología, reuniones de trabajo con actores involucrados, verificación de la recopilación de información y revisión de las piezas gráficas, desempeñé un papel esencial en este proyecto.
-¿Qué es? Amigable documento que presenta información detallada sobre las etiquetas declaradas en 14 productos ofertados en el mercado peruano, que son utilizados como sustituto del azúcar para endulzar alimentos y bebidas.
+I was responsible for developing the methodology, facilitating stakeholder meetings, verifying data collection, and reviewing graphical content, which were all essential to this project. 
+What is it? 
+This accessible document provides detailed information about the labels of 14 sugar substitutes available in the Peruvian market, used to sweeten foods and beverages.
 
-Mas informacion es: 
+Further details at: 
 - https://www.gob.pe/institucion/indecopi/noticias/683381-edulcorantes-conoce-cuales-son-los-productos-que-podrian-impactar-en-tu-salud-a-traves-de-la-guia-comparativa-del-indecopi

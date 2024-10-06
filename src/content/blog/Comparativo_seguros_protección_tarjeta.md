@@ -16,10 +16,11 @@ author: "Susana Casanova"
 tags: [AI, SaaS]
 ---
 
-## Comparativo de seguros de protección de tarjeta
+## Comparison of Credit Protection Insurance:
 
-Como responsable de la creación de la metodología, reuniones de trabajo con actores involucrados, verificación de la recopilación de información y revisión de las piezas gráficas, desempeñé un papel esencial en este proyecto.
-¿Qué es? El comparativo pone al alcance información relacionada a los seguros de protección de tarjetas ofrecidos por diferentes bancos a nivel nacional, brindándote detalle sobre sus precios, montos de cobertura, números de sucesos y modalidades bajo las cuales se hace efectivo el seguro.
+I was responsible for developing the methodology, conducting stakeholder meetings, verifying information collection, and reviewing graphic materials, playing a vital role in this project. 
+What is it? 
+his comparison provides essential information on credit protection insurance offered by various banks across the country, detailing prices, coverage amounts, incident statistics, and the conditions under which the insurance is activated.
 
-Mas informacion en: 
+Further details at:
 - https://www.gob.pe/institucion/indecopi/informes-publicaciones/3593455-checa-tu-seguro-comparativo-deseguros-de-proteccion-de-tarjetas-ofrecidas-por-los-bancos

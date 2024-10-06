@@ -14,9 +14,11 @@ author: "Susana Casanova"
 tags: [webdev, tailwindcss, frontend]
 ---
 
-## Reclamos y quejas
-Inicié la propuesta y creación del Tablero CEMI, una herramienta que recopila información crucial de reclamos y quejas de consumidores durante la pandemia. Además, lideré la primera versión del tablero.
-¿Qué es? Este proyecto fue reconocido en los Premios de Buenas Prácticas de Gestión Pública (2021) y ganadores en Premios Democracia Digital (2022). El Tablero CEMI brinda respuestas rápidas a casos que afectan a los consumidores, activando fiscalizaciones a empresas y proveedores desde el Indecopi.
+## Complaints and Claims:
 
-Mas información: 
+I initiated the proposal and development of the CEMI Dashboard, a tool that compiles essential information on consumer complaints during the pandemic. I also led the first version of this dashboard. 
+What is it? 
+This project received recognition at the Good Practices in Public Management Awards (2021) and won the Digital Democracy Awards (2022). The CEMI Dashboard offers rapid responses to consumer issues, facilitating investigations into companies and providers by Indecopi.
+
+Further details at:
 - https://app.powerbi.com/view?r=eyJrIjoiZTY1YmJmZjMtOGIzMS00ZTk5LTllNmMtMDVlMGEwNjJlYTFhIiwidCI6IjgwZDQ5YjM4LTkwYzYtNDJkYi04MDkwLTVkZGY4OTE5YjU2YiIsImMiOjR9

@@ -13,9 +13,11 @@ author: "Susana Casanova"
 tags: [webdev, tailwindcss, frontend]
 ---
 
-## Caracterización de comercio exterior
-Realicé el proceso de modelación y creación de un visualizador de datos en Power BI para caracterizar la situación exportadora del Perú.
-¿Qué es? Este proyecto forma parte de Observatorio Empresarial del Ministerio de Producción donde se brinda la caracterización de las exportaciones peruanas por tamaño, sector, destino de exportación, evolución de monto exportado, entre otros.
+## Foreign Trade Overview:
 
-Mas información en: 
+I led the modeling and development of a Power BI dashboard to assess Peru's export performance.
+What is it?
+This project, part of the Ministry of Production's Business Observatory, offers detailed insights into Peruvian exports, including company size, sector, export destinations, trends in export value, and more.
+
+Further details at: 
 - https://www.producempresarial.pe/comercio-externo-tablero-comercio/

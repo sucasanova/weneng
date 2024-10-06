@@ -13,8 +13,10 @@ author: "Susana Casanova"
 tags: [webdev, tailwindcss, frontend]
 ---
 
-## Caracterización del financiamiento
-Realicé el proceso de modelación y creación de un visualizador de datos en Power BI para caracterizar el acceso al financiamiento de las empresas peruanas.
-¿Qué es? Este proyecto forma parte de Observatorio Empresarial del Ministerio de Producción donde se brinda la caracterización del acceso al financiamiento por tamaño, actividad económica, región, así como indicadores de tasa promedio y porcentaje de inclusión financiera, entre otros.
-Mas informacion en: 
+## Financing Overview:
+I spearheaded the modeling and development of an interactive Power BI dashboard to evaluate how Peruvian companies access financing.
+What is it?
+This project, part of the Ministry of Production’s Business Observatory, provides a comprehensive analysis of financing access by company size, industry, and region. It includes critical indicators such as average interest rates, levels of financial inclusion, and other relevant financial metrics.
+
+Further details at:
 - https://www.producempresarial.pe/financiamiento-tablero-indicadores/

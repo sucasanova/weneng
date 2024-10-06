@@ -14,7 +14,11 @@ author: "Susana Casanova"
 tags: [AI, SaaS]
 ---
 
-## Prácticas comerciales del CYBER WOW
+## Commercial Practices during CYBER WOW:
 
-Como responsable de la creación de la metodología, extracción y la revisión de las piezas gráficas, desempeñé un papel esencial en este proyecto.
-¿Qué es? Informativo amigable para identificar las prácticas comerciales más recurrentes que podrían influir en el comportamiento del consumidor al proporcionar datos personales, realizar compras o aceptar cargos adicionales.
+I was responsible for developing the methodology, extracting data, and reviewing visual materials for this project. 
+What is it? 
+This user-friendly report identifies common commercial practices that could influence consumer behavior when providing personal information, making purchases, or accepting additional charges.
+
+Further details at: 
+- https://bit.ly/Practicas_comerciales

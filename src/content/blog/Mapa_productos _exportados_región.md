@@ -13,9 +13,11 @@ author: "Susana Casanova"
 tags: [webdev, tailwindcss, frontend]
 ---
 
-## Mapa de productos exportados por región:
-Realicé el proceso de modelación y creación de un visualizador de datos en Power BI para caracterizar los principales productos exportados por las empresas exportadoras desde una mirada regional.
-¿Qué es? Este proyecto forma parte de Observatorio Empresarial del Ministerio de Producción donde se brinda la caracterización del producto exportado por región, tamaño, sector, actividad económica y otros.
+## Map of Exported Products by Region:
 
-Mas informaciín: 
+I led the modeling and development of a Power BI data visualization tool to characterize the primary products exported by Peruvian companies from a regional perspective.
+What is it?
+This project is part of the Ministry of Production's Business Observatory, which offers a comprehensive overview of exports categorized by region, company size, industry sector, and economic activity, among other factors. The tool provides valuable insights into regional export dynamics, highlighting trends and performance across different areas of Peru.
+
+Further details at:
 - https://www.producempresarial.pe/comercio-externo-tablero-productos/
