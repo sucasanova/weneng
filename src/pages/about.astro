@@ -1,0 +1,601 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Link from "@components/ui/link.astro";
+import EmployeeImg from "../assets/foto_about.png";
+import Logos from "@components/logos.astro";
+import { Icon } from "astro-icon/components";
+import Cta from "@components/cta.astro";
+
+
+import Badge from "@components/ui/badge.astro";
+
+import FeatureImg1 from "../assets/features/SUNEDU.png";
+
+
+
+import FeatureImg2 from "../assets/features/numbers_su.png";
+
+//FOTOS DE LAS EMPRESAS 
+import Sunedu from "../assets/features/SUNEDU.png";
+import Indecopi from "../assets/features/indecopi.jpg";
+import pucp from "../assets/features/pucp.png";
+import osenergmin from "../assets/features/osenirgmin_logo.jpg";
+import min_producion from "../assets/features/Ministerio_de_la_Producción.png";
+import abogados from "../assets/features/Estudio_Bullard_Falla_Ezcurra_Abogados.png";
+import pronabec from "../assets/features/pronabec.jpg";
+
+// Filter team entries with 'draft: false' & date before current date
+const publishedTeamMembers = await getCollection("team", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+const { nomargin } = Astro.props;
+---
+
+<Layout title="About" footerMargin={false}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="badge">ABOUT ME</Fragment>
+      <Fragment slot="title">Carta pública </Fragment>
+      <Fragment slot="desc">
+        Una economista y servidora pública apasionada por la innovación y comprometida con el desarrollo sostenible. Mi enfoque está en encontrar soluciones creativas para desafíos complejos, siempre con el objetivo de promover el bienestar de la sociedad.
+      </Fragment>
+    </Sectionhead>
+    <!--<div class="mt-6 text-center">
+      <Link style="outline" size="sm" href="#" target="_blank" rel="noopener">
+        Ver completo
+      </Link>
+    </div> -->
+    <div class="mt-6  py-6 border-slate-100"> <!--mt-16 -->
+      <Logos />
+    </div>
+
+    <div class="grid sm:grid-cols-2 gap-10 mx-auto mt-24">
+      <div class="relative">
+        <div
+          class="absolute hidden md:block w-96 h-96 bg-purple-100 rounded-full right-0 top-1/3 -z-10">
+        </div>
+        <div
+          class="absolute hidden md:block w-44 h-44 bg-purple-100 rounded-full left-10 top-1/4 -z-10">
+        </div>
+        <Picture
+          formats={["avif", "webp"]}
+          src={EmployeeImg}
+          alt="Happy Team"
+          class="rounded-xl w-full max-w-md mx-auto shadow-2xl"
+          loading="lazy"
+        />
+      </div>
+      <div class="place-self-center">
+        <h2 class="text-3xl text-gray-800 tracking-tight -mt-2">
+          <span class="text-indigo-600">Mi</span>
+          {" "}
+          <strong>Misión</strong>
+        </h2>
+        <p class="text-lg max-w-xl mt-4 leading-relaxed text-slate-500">
+          Es transformar desafíos en oportunidades, fusionando mi pasión por la economía y la innovación para crear soluciones que impacten positivamente en el desarrollo sostenible y el bienestar social. En mi camino, me he alineado con los siguientes Objetivos de Desarrollo Sostenible:
+        </p>
+        <ul class="grid mt-6 text-left gap-y-4">
+          <li class="flex items-center gap-3 text-slate-800">
+            <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+            <span class="text-slate-600">Fin de la Pobreza</span>
+          </li>
+
+          <li class="flex items-center gap-3 text-slate-800">
+            <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+            <span class="text-slate-600">Salud y Bienestar</span>
+          </li>
+
+          <li class="flex items-center gap-3 text-slate-800">
+            <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+            <span class="text-slate-600">Educación de Calidad</span>
+          </li>
+
+          <li class="flex items-center gap-3 text-slate-800">
+            <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+            <span class="text-slate-600">Trabajo Decente y Crecimiento Económico</span>
+          </li>
+
+          <li class="flex items-center gap-3 text-slate-800">
+            <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+            <span class="text-slate-600">Industria, Innovación e Infraestructura</span>
+          </li>
+
+          
+        </ul>
+        <br><br>
+        <div
+              class="mt-6 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-3 ">
+              
+              <Link
+                size="lg"
+                style="outline"
+                rel="noopener"
+                href="https://drive.google.com/file/d/1d4F-Au56vUtJIEVve1JG02mL7PvCIeNr/view?usp=sharing"
+                class="flex gap-1 items-center justify-center"
+                target="_blank">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="16pt" height="16pt" viewBox="0 0 512.000000 512.000000"
+                preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                <path d="M1090 5101 c-313 -66 -566 -322 -631 -635 -119 -575 392 -1086 967
+                -967 316 65 570 319 635 635 24 115 24 217 0 332 -91 441 -530 728 -971 635z
+                m311 -200 c237 -61 399 -223 460 -460 58 -225 -31 -478 -219 -626 -71 -56
+                -145 -91 -241 -116 -225 -58 -478 31 -626 219 -56 71 -91 145 -116 241 -58
+                225 31 478 219 626 149 117 346 161 523 116z"/>
+                <path d="M1328 4393 l-178 -177 -63 61 c-34 33 -72 66 -85 73 -56 28 -132 -25
+                -132 -93 0 -38 6 -47 118 -159 115 -114 120 -118 162 -118 43 0 45 2 247 203
+                113 111 214 215 225 230 11 16 20 44 20 65 0 49 -46 92 -99 92 -34 0 -49 -12
+                -215 -177z"/>
+                <path d="M2315 5108 c-69 -38 -73 -142 -7 -175 9 -4 488 -10 1064 -13 l1048
+                -5 27 -28 28 -27 0 -2300 0 -2300 -28 -27 -27 -28 -1860 0 -1860 0 -27 28 -28
+                27 -5 1379 c-6 1519 0 1399 -68 1428 -30 12 -38 12 -70 -4 -20 -10 -42 -29
+                -49 -43 -10 -20 -12 -318 -10 -1410 l2 -1385 21 -46 c28 -60 93 -125 153 -153
+                l46 -21 1895 0 1895 0 46 21 c60 28 125 93 153 153 l21 46 0 2335 0 2335 -21
+                46 c-28 60 -93 125 -153 153 l-46 21 -1060 2 c-762 2 -1066 -1 -1080 -9z"/>
+                <path d="M2400 4711 c-70 -10 -96 -24 -116 -63 -13 -26 -14 -38 -5 -68 19 -64
+                23 -65 235 -65 147 -1 209 -5 271 -19 348 -78 621 -286 777 -592 89 -174 123
+                -315 123 -514 0 -195 -33 -339 -117 -505 -38 -76 -118 -198 -138 -210 -5 -3
+                -28 22 -51 57 -91 134 -250 265 -403 334 -36 16 -66 32 -66 35 0 3 14 24 31
+                45 75 94 109 203 109 350 0 166 -38 276 -130 377 -97 107 -220 161 -360 161
+                -140 0 -263 -54 -360 -161 -92 -101 -130 -211 -130 -377 0 -147 34 -256 109
+                -350 17 -21 31 -42 30 -45 0 -3 -40 -25 -89 -49 -160 -77 -295 -194 -392 -339
+                l-34 -52 -48 66 c-91 126 -164 292 -196 447 -16 76 -44 106 -100 106 -33 0
+                -48 -6 -72 -31 -29 -28 -30 -33 -25 -87 16 -150 115 -389 223 -538 142 -197
+                308 -335 520 -435 260 -123 548 -157 832 -99 447 91 822 415 982 851 54 146
+                74 265 74 449 0 184 -20 303 -74 449 -160 436 -534 759 -983 852 -111 23 -334
+                33 -427 20z m280 -903 c58 -25 105 -70 138 -133 22 -42 27 -67 30 -151 6 -144
+                -11 -199 -87 -275 -85 -85 -175 -107 -291 -73 -78 23 -162 109 -185 189 -25
+                84 -17 243 14 305 75 146 232 203 381 138z m-9 -858 c225 -32 428 -161 553
+                -349 25 -38 46 -73 46 -79 0 -16 -114 -94 -205 -140 -309 -157 -672 -161 -989
+                -12 -88 41 -203 115 -219 141 -8 13 1 33 39 90 170 256 474 393 775 349z"/>
+                <path d="M505 3441 c-64 -27 -81 -110 -32 -158 60 -61 162 -19 162 67 0 66
+                -72 116 -130 91z"/>
+                <path d="M1595 1689 c-74 -43 -73 -140 4 -179 72 -37 159 47 127 123 -7 18
+                -20 38 -29 45 -22 18 -78 24 -102 11z"/>
+                <path d="M2020 1687 c-14 -7 -33 -29 -43 -50 -18 -36 -18 -38 0 -74 10 -21 29
+                -43 43 -50 34 -17 1470 -19 1503 -2 75 39 75 139 0 178 -33 17 -1469 15 -1503
+                -2z"/>
+                <path d="M1595 1129 c-74 -43 -73 -140 4 -179 72 -37 159 47 127 123 -7 18
+                -20 38 -29 45 -22 18 -78 24 -102 11z"/>
+                <path d="M2020 1127 c-14 -7 -33 -29 -43 -50 -18 -36 -18 -38 0 -74 10 -21 29
+                -43 43 -50 34 -17 1470 -19 1503 -2 75 39 75 139 0 178 -33 17 -1469 15 -1503
+                -2z"/>
+                </g>
+                </svg>
+                Currilum vitae
+              </Link>
+              <Link
+                size="lg"
+                style="outline"
+                rel="noopener"
+                href="/blog"
+                class="flex gap-1 items-center justify-center"
+                target="_blank">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="16pt" height="16pt" viewBox="0 0 512.000000 512.000000"
+                preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                <path d="M160 5107 c-49 -16 -133 -102 -148 -153 -9 -32 -12 -511 -12 -2090
+                l0 -2049 24 -50 c28 -60 66 -97 126 -124 43 -19 64 -21 403 -21 l358 0 24 25
+                c35 34 34 86 -1 114 -26 20 -38 21 -376 21 l-349 0 -24 25 -25 24 0 2041 0
+                2041 25 24 24 25 1110 0 1110 0 3 -282 c3 -277 4 -284 28 -333 33 -68 99 -129
+                166 -154 50 -19 77 -21 299 -21 l245 0 0 -176 0 -176 30 -30 c26 -25 36 -29
+                63 -24 18 3 40 16 50 28 17 20 18 42 15 272 -3 239 -4 253 -25 286 -42 66
+                -666 722 -708 744 -40 21 -47 21 -1220 23 -841 1 -1190 -2 -1215 -10z m2674
+                -537 l217 -235 -177 -3 c-194 -3 -214 2 -258 61 -19 26 -21 43 -24 235 -3 181
+                -1 205 12 192 8 -8 111 -121 230 -250z"/>
+                <path d="M3583 5105 c-13 -9 -27 -32 -32 -53 -21 -78 -71 -326 -71 -352 0 -58
+                82 -91 129 -52 20 16 30 50 71 255 l12 58 76 -3 76 -3 31 -142 c21 -102 36
+                -148 50 -162 11 -10 54 -28 95 -41 41 -12 113 -41 159 -66 46 -24 93 -44 105
+                -44 11 0 76 36 144 80 68 44 127 80 131 80 9 0 101 -93 101 -102 0 -4 -36 -62
+                -80 -129 -44 -68 -80 -132 -80 -145 0 -12 20 -59 44 -105 25 -46 54 -118 66
+                -159 13 -41 31 -84 41 -95 14 -14 60 -29 162 -50 l142 -31 3 -77 c2 -42 -1
+                -77 -5 -77 -28 0 -288 -62 -299 -71 -8 -6 -25 -48 -39 -93 -14 -45 -45 -121
+                -70 -169 -25 -48 -45 -98 -45 -111 0 -56 87 -90 131 -50 25 22 99 167 123 241
+                l17 51 67 15 c37 8 105 23 152 33 130 28 130 28 130 223 0 163 -7 203 -39 217
+                -9 4 -81 21 -160 38 -93 20 -147 36 -152 46 -4 8 -22 51 -39 95 -17 44 -36 91
+                -42 105 -10 23 -2 39 72 154 57 87 83 137 83 158 0 25 -20 50 -121 150 -100
+                101 -125 121 -150 121 -21 0 -71 -26 -159 -83 -114 -74 -131 -81 -153 -72 -14
+                6 -68 28 -120 50 l-95 39 -27 129 c-38 177 -36 171 -60 194 -20 18 -35 20
+                -188 20 -133 0 -170 -3 -187 -15z"/>
+                <path d="M3713 4398 c-23 -24 -29 -61 -17 -93 10 -24 58 -45 107 -45 152 0
+                330 -119 406 -272 58 -116 66 -268 20 -401 -21 -63 -22 -71 -8 -95 18 -34 60
+                -49 96 -36 93 33 135 339 70 522 -36 102 -81 174 -158 251 -116 116 -254 180
+                -409 188 -80 5 -86 4 -107 -19z"/>
+                <path d="M463 4403 c-28 -6 -63 -49 -63 -78 0 -12 9 -34 21 -49 19 -24 27 -26
+                89 -26 62 0 70 2 89 26 59 76 -23 152 -136 127z"/>
+                <path d="M903 4403 c-28 -5 -63 -49 -63 -78 0 -12 9 -34 21 -49 l20 -26 594 0
+                c550 0 594 1 614 18 34 28 37 73 8 108 l-25 29 -574 1 c-315 1 -583 0 -595 -3z"/>
+                <path d="M425 4015 c-33 -33 -32 -70 4 -106 24 -24 38 -29 76 -29 51 0 99 20
+                109 45 12 33 5 66 -19 90 -20 21 -34 25 -85 25 -51 0 -65 -4 -85 -25z"/>
+                <path d="M871 4023 c-11 -10 -24 -32 -27 -50 -5 -27 -1 -37 24 -63 l30 -30
+                582 0 582 0 30 30 c25 26 29 36 24 63 -13 70 18 67 -636 67 -545 0 -589 -1
+                -609 -17z"/>
+                <path d="M439 3667 c-44 -34 -47 -103 -6 -132 13 -9 44 -15 80 -15 48 0 62 4
+                82 25 16 15 25 36 25 55 0 19 -9 40 -25 55 -20 21 -34 25 -82 25 -32 0 -65 -6
+                -74 -13z"/>
+                <path d="M883 3668 c-27 -13 -47 -59 -38 -88 4 -11 16 -30 28 -40 20 -19 36
+                -20 344 -20 l324 0 24 25 c16 15 25 36 25 55 0 19 -9 40 -25 55 l-24 25 -318
+                -1 c-201 0 -326 -4 -340 -11z"/>
+                <path d="M2356 3580 c-63 -25 -122 -81 -152 -145 -23 -48 -24 -59 -24 -277 l0
+                -227 -397 -3 -398 -3 -56 -26 c-91 -43 -162 -127 -191 -224 -4 -17 -8 -557 -8
+                -1212 l0 -1183 22 -57 c15 -42 38 -75 83 -120 53 -52 72 -64 131 -82 l69 -21
+                1710 2 1710 3 67 33 c77 38 130 92 167 171 l26 56 0 1200 0 1200 -27 57 c-35
+                76 -98 142 -167 175 l-56 28 -397 3 -397 3 -3 232 -3 232 -30 54 c-16 29 -47
+                69 -69 87 -76 65 -64 64 -850 64 -677 -1 -713 -2 -760 -20z m1516 -178 l33
+                -32 0 -218 0 -217 -85 0 -85 0 -3 168 -2 167 -610 0 -610 0 0 -170 0 -170 -85
+                0 -85 0 0 210 c0 169 3 217 15 240 32 62 2 60 777 57 l708 -2 32 -33z m-302
+                -382 l0 -90 -447 2 -448 3 -3 88 -3 87 451 0 450 0 0 -90z m1288 -271 c26 -13
+                54 -38 70 -62 l27 -40 3 -298 c3 -283 2 -300 -17 -338 -22 -42 -58 -72 -117
+                -97 -20 -9 -305 -67 -633 -130 -328 -62 -608 -116 -623 -120 l-28 -6 0 148 c0
+                128 -3 153 -20 188 -41 82 -35 81 -385 84 -347 3 -357 1 -402 -67 -22 -32 -23
+                -44 -23 -193 0 -147 -1 -159 -17 -154 -10 3 -117 23 -238 46 -746 140 -1012
+                193 -1051 212 -48 22 -101 76 -109 111 -3 12 -5 157 -3 323 l3 301 28 36 c15
+                21 45 46 65 57 36 19 71 19 1731 20 l1695 0 44 -21z m-1480 -1151 c-3 -368 -3
+                -367 -92 -445 -131 -115 -332 -65 -401 100 -12 30 -15 91 -15 352 l0 315 256
+                0 255 0 -3 -322z m-1359 32 c339 -64 632 -120 653 -124 l36 -7 4 -132 c3 -124
+                5 -136 35 -197 104 -213 349 -299 558 -196 159 78 235 218 235 428 0 54 4 98
+                8 98 12 0 1090 206 1206 231 54 11 123 31 152 44 l54 24 0 -742 c0 -698 -2
+                -744 -19 -782 -22 -49 -69 -91 -119 -105 -26 -8 -546 -10 -1723 -8 l-1685 3
+                -42 28 c-23 15 -51 45 -62 67 -20 38 -20 56 -20 789 l0 750 56 -26 c42 -19
+                212 -55 673 -143z"/>
+                <path d="M3065 1410 c-11 -12 -19 -36 -19 -55 0 -47 28 -75 74 -75 71 0 107
+                81 57 128 -31 29 -87 29 -112 2z"/>
+                </g>
+                </svg>
+                Portafolio 
+              </Link>
+              <Link
+                size="lg"
+                style="outline"
+                rel="noopener"
+                href="https://www.linkedin.com/in/susana-casanova-huiman-4298b8140/"
+                class="flex gap-1 items-center justify-center"
+                target="_blank">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                width="16pt" height="16pt" viewBox="0 0 512.000000 512.000000"
+                preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                fill="#000000" stroke="none">
+                <path d="M372 5024 c-96 -26 -187 -96 -240 -185 -55 -91 -52 24 -52 -2279 0
+                -2303 -3 -2188 52 -2279 30 -51 85 -107 138 -141 100 -64 -49 -60 2316 -58
+                l2149 3 57 23 c67 27 143 93 186 160 66 102 62 -51 62 2292 0 2320 3 2185 -56
+                2286 -37 63 -125 139 -192 166 l-57 23 -2155 2 c-1846 2 -2163 0 -2208 -13z
+                m4394 -179 c30 -19 60 -49 79 -79 l30 -49 0 -2157 0 -2157 -30 -49 c-19 -30
+                -49 -60 -79 -79 l-49 -30 -2157 0 -2157 0 -49 30 c-30 19 -60 49 -79 79 l-30
+                49 0 2156 0 2156 28 47 c30 51 70 84 126 104 29 11 444 13 2177 11 l2141 -2
+                49 -30z"/>
+                <path d="M1145 4217 c-106 -36 -196 -113 -237 -204 -33 -74 -31 -200 5 -274
+                34 -70 109 -142 185 -177 49 -23 70 -27 152 -27 83 0 103 4 153 27 224 105
+                280 386 111 556 -74 73 -146 105 -249 109 -48 2 -96 -2 -120 -10z m168 -148
+                c44 -12 102 -59 124 -102 39 -76 7 -181 -70 -234 -36 -25 -49 -28 -118 -28
+                -70 0 -82 3 -121 30 -124 86 -112 251 23 319 57 28 101 32 162 15z"/>
+                <path d="M3287 3290 c-170 -19 -329 -82 -464 -184 l-73 -55 0 73 c0 58 -4 79
+                -19 97 l-19 24 -315 3 -315 3 -28 -25 -29 -24 -3 -1109 c-1 -609 0 -1123 3
+                -1141 3 -18 15 -42 26 -53 18 -18 36 -19 394 -19 l376 0 24 25 25 24 0 563 c1
+                861 12 945 144 1065 117 107 294 123 396 35 42 -35 62 -70 83 -142 6 -22 12
+                -323 16 -783 l6 -749 24 -19 c22 -18 43 -19 338 -19 l314 0 24 25 25 24 0 778
+                c0 774 -5 931 -35 1048 -21 82 -84 211 -131 267 -159 191 -484 301 -787 268z
+                m208 -160 c105 -12 248 -58 324 -103 112 -67 201 -199 237 -352 15 -62 18
+                -165 21 -852 l4 -783 -210 0 -210 0 -4 693 c-3 474 -8 708 -15 742 -54 232
+                -246 362 -480 327 -195 -30 -351 -163 -407 -346 -42 -136 -46 -213 -52 -828
+                l-5 -588 -259 0 -259 0 0 1025 0 1025 199 0 199 0 4 -140 c3 -156 10 -173 76
+                -186 31 -6 37 -2 120 86 140 148 274 230 432 264 66 14 95 18 175 24 11 1 60
+                -3 110 -8z"/>
+                <path d="M923 3240 c-12 -5 -26 -18 -32 -29 -8 -14 -11 -370 -11 -1151 l0
+                -1131 25 -24 24 -25 314 0 c295 0 316 1 338 19 l24 19 3 1129 c2 792 -1 1136
+                -9 1154 -5 15 -22 31 -35 38 -30 13 -607 14 -641 1z m527 -1175 l0 -1025 -205
+                0 -205 0 0 1025 0 1025 205 0 205 0 0 -1025z"/>
+                </g>
+                </svg>
+                Linkedin
+              </Link>
+            </div>
+      </div>
+    </div>
+<br> <br><br> <hr>
+<!--
+#################################################################
+#################################################################
+ -->
+ <div
+    class:list={[
+      "max-w-4xl mx-auto flex flex-col items-center justify-center",
+      !nomargin && "mt-8",
+    ]}>
+    
+    <!--<Badge color="purple">#Experiencias #laboral #empresarial</Badge> -->
+    <h2 class="text-2xl lg:text-3xl font-bold lg:tracking-tight mt-4 text-center">
+      Mi experiencia laboral
+    </h2>
+    <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty]">
+      Proyectos y roles que han enriquecido mis habilidades y conocimientos, desde la gestión de equipos multidisciplinarios hasta la implementación de soluciones tecnológicas innovadoras, cada experiencia ha contribuido significativamente a mi desarrollo profesional.
+    </p>
+</div>
+
+    <!--######################### start experiencia ########################################
+    ##############################################################################-->
+    <div class="grid md:grid-cols-3 py-10">
+      <!-- Primera columna -->
+      <div class="grid place-items-center">
+        <Picture src={min_producion} alt="Feature Image" formats={["avif", "webp"]} loading="lazy" class="w-60"/>
+      </div>
+      <div class="col-span-2">
+       
+          <Badge color="purple" class="-ml-px">#ComercioExterior #InnovaciónEmpresarial</Badge>
+          <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
+            MINISTERIO DE PRODUCCIÓN (PRODUCE)
+          </h3>
+          <p class="mt-4 text-slate-600 [text-wrap:balance]">
+            Analista Económico de Comercio Exterior: Oficina de Estudios Económicos.
+          </p>
+          <ul class="grid mt-6 text-left gap-y-4">
+            <li class="flex items-center gap-3 text-neutral-800">
+              <Icon name="ph:check-circle-fill" class="w-10 h-5" />
+              <span class="text-sm">Creadora de tableros de control innovadores para el Observatorio Empresarial, proporcionando el seguimiento de aspectos clave de las empresas del país.</span>
+            </li>
+            <li class="flex items-center gap-3 text-neutral-800">
+              <Icon name="ph:check-circle-fill" class="w-10 h-5"/>
+              <span class="text-sm">Responsable de estudios económicos del comercio exterior, contribuyendo a monitorear su avance y principales retos.</span>
+            </li>
+          </ul>
+      </div>
+      
+    </div>
+    <!--######################### fin experiencia ########################################
+  ##############################################################################-->
+  <!--######################### start experiencia ########################################
+  ##############################################################################-->
+  
+  <div class="grid md:grid-cols-3 py-10">
+    <!-- Primera columna -->
+    <div class="grid place-items-center">
+      <Picture src={Indecopi} alt="Feature Image" formats={["avif", "webp"]} loading="lazy" class="w-60"/>
+    </div>
+    <div class="col-span-2">
+      
+        <Badge color="purple" class="-ml-px">#ProtecciónDelConsumidor #Transparencia #DatosAbiertos</Badge>
+        <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
+          INSTITUTO NACIONAL DE DEFENSA DE LA COMPETENCIA Y DE LA PROTECCIÓN DE LA PROPIEDAD INTELECTUAL (INDECOPI)
+        </h3>
+        <p class="mt-4 text-slate-600 [text-wrap:balance]">
+          Especialista Económico: Autoridad Nacional de Protección del Consumidor
+        </p>
+        <ul class="grid mt-6 text-left gap-y-4">
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon name="ph:check-circle-fill" class="w-10 h-5" />
+            <span class="text-sm">Líder de equipo en la evaluación de mercados y productos, impactando positivamente a más de medio millón de consumidores </span>
+            
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon name="ph:check-circle-fill" class="w-10 h-5" />
+            <span class="text-sm">Vocera oficial de INDECOPI en medios, comunicando de manera clara y efectiva para promover la transparencia.</span>
+            
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon name="ph:check-circle-fill" class="w-10 h-5" />
+            <span class="text-sm">Creadora de tableros de control innovadores, reconocidos por su eficacia en la gestión pública.</span>
+          </li>
+        </ul>
+        
+    </div>
+  </div>
+  <!--######################### fin experiencia ########################################
+##############################################################################-->
+<!--######################### start experiencia ########################################
+  ##############################################################################-->
+  <div class="grid md:grid-cols-3 py-10">
+    <!-- Primera columna -->
+    <div class="grid place-items-center">
+      <Picture src={Sunedu} alt="Feature Image" formats={["avif", "webp"]} loading="lazy" class="w-60"/>
+    </div>
+    <div class="col-span-2">
+        <Badge color="purple" class="-ml-px">
+          #CalidadEducativa #MejoraContinua
+        </Badge>
+        <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
+          SUPERINTENDENCIA NACIONAL DE EDUCACIÓN SUPERIOR UNIVERSITARIA (SUNEDU)
+        </h3>
+        <p class="mt-4 text-slate-600 [text-wrap:balance]">
+          Especialista Económico: Sistematización de Condiciones Básicas de Calidad (CBC)
+        </p>
+        <ul class="grid mt-6 text-left gap-y-4">
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon name="ph:check-circle-fill" class="w-10 h-5" />
+            <span class="text-sm">
+              Desarrollo de indicadores automáticos para el seguimiento de la calidad educativa, promoviendo la mejora continua en las universidades.
+            </span>
+
+          </li>
+        </ul>
+    </div>
+  </div>
+  <!--######################### fin experiencia ########################################
+##############################################################################-->
+<!--######################### start experiencia ########################################
+  ##############################################################################-->
+  <div class="grid md:grid-cols-3 py-10">
+    <!-- Primera columna -->
+    <div class="grid place-items-center">
+      <Picture src={pronabec} alt="Feature Image" formats={["avif", "webp"]} loading="lazy" class="w-60"/>
+    </div>
+    <div class="col-span-2">
+        <Badge color="purple" class="-ml-px">
+          #AccesoALaEducación #EficienciaEnElUsoDeRecursos
+        </Badge>
+        <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
+          PROGRAMA NACIONAL DE BECAS Y CRÉDITO EDUCATIVO (PRONABEC)
+        </h3>
+        <p class="mt-4 text-slate-600 [text-wrap:balance]">
+          Consultor Económico: Unidad de Seguimiento del Crédito Educativo
+        </p>
+        <ul class="grid mt-6 text-left gap-y-4">
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon name="ph:check-circle-fill" class="w-10 h-5" />
+            <span class="text-sm">
+              Recuperación exitosa de más de 800 mil soles en depósitos no identificados, asegurando el uso eficiente de los recursos educativos.
+            </span>
+                
+          </li>
+        </ul>
+    </div>
+  </div>
+  <!--######################### fin experiencia ########################################
+##############################################################################-->
+  <!--######################### start experiencia ########################################
+  ##############################################################################-->
+  <div class="grid md:grid-cols-3 py-10">
+    <!-- Primera columna -->
+    <div class="grid place-items-center">
+      <Picture src={osenergmin} alt="Feature Image" formats={["avif", "webp"]} loading="lazy" class="w-60"/>
+    </div>
+    <div class="col-span-2">
+        <Badge color="purple" class="-ml-px">
+          #EnergíaSostenible #ReducciónDeLaPobrezaEnergética
+        </Badge>
+        <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
+          ORGANISMO SUPERVISOR DE LA INVERSIÓN EN ENERGÍA Y MINAS (OSINERGMIN) 
+        </h3>
+        <p class="mt-4 text-slate-600 [text-wrap:balance]">
+          Practicante Profesional: Fondo de Inclusión Social Energético (FISE)
+        </p>
+        <ul class="grid mt-6 text-left gap-y-4">
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon name="ph:check-circle-fill" class="w-10 h-5" />
+            <span class="text-sm">
+              Reconocimiento por el Premio a las Buenas Prácticas en la Gestión Pública, liderando iniciativas para combatir la pobreza energética.
+            </span>              
+          </li>
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon name="ph:check-circle-fill" class="w-10 h-5" />
+            <span class="text-sm">
+              Creación de encuestas de hábitos de consumo para reducir la pobreza energética, comprensión esencial para diseñar estrategias efectivas.
+            </span>
+            
+          </li>
+        </ul>
+    </div>
+  </div>
+  <!--######################### fin experiencia ########################################
+##############################################################################-->
+  <!--######################### start experiencia ########################################
+  ##############################################################################-->
+  <div class="grid md:grid-cols-3 py-10">
+    <!-- Primera columna -->
+    <div class="grid place-items-center">
+      <Picture src={abogados} alt="Feature Image" formats={["avif", "webp"]} loading="lazy" class="w-60"/>
+    </div>
+    <div class="col-span-2">
+        <Badge color="purple" class="-ml-px">
+          #AnálisisEconómico #Regulación
+        </Badge>
+        <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
+          BULLARD, FALLA & EZCURRA ABOGADOS (BFE)
+        </h3>
+        <p class="mt-4 text-slate-600 [text-wrap:balance]">
+          Practicante Preprofesional: Análisis Económico
+        </p>
+        <ul class="grid mt-6 text-left gap-y-4">
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon name="ph:check-circle-fill" class="w-10 h-5" />
+            <span class="text-sm">
+              Contribución en análisis sectorial macroeconómico y de fusiones y adquisiciones, respaldando la toma de decisiones estratégicas.
+            </span>
+            
+          </li>
+        </ul>
+    </div>
+  </div>
+  <!--######################### fin experiencia ########################################
+##############################################################################-->
+  <!--######################### start experiencia ########################################
+  ##############################################################################-->
+  <div class="grid md:grid-cols-3 py-10">
+    <!-- Primera columna -->
+    <div class="grid place-items-center">
+      <Picture src={pucp} alt="Feature Image" formats={["avif", "webp"]} loading="lazy" class="w-60"/>
+    </div>
+    <div class="col-span-2">
+        <Badge color="purple" class="-ml-px">
+          #EducaciónSuperior #FormaciónDeCapitalHumano
+        </Badge>
+        <h3 class="text-2xl font-medium mt-4 [text-wrap:balance]">
+          PONTIFICIA UNIVERSIDAD CATÓLICA DEL PERÚ (PUCP)
+        </h3>
+        <p class="mt-4 text-slate-600 [text-wrap:balance]">
+          Asistente de Docencia: Curso de regulación económica / Facultad Economía
+        </p>
+        <ul class="grid mt-6 text-left gap-y-4">
+          <li class="flex items-center gap-3 text-neutral-800">
+            <Icon name="ph:check-circle-fill" class="w-10 h-5" />
+            <span class="text-sm">
+              Facilité el aprendizaje como asistente de docencia en el curso de Economía para ingresantes en el Centro Preuniversitario de la PUCP (CEPREPUC), apoyando el proceso de adaptación y formación académica de los nuevos estudiantes.
+            </span>
+            
+          </li>
+        </ul>
+    </div>
+  </div>
+  <!--######################### fin experiencia ########################################
+##############################################################################-->
+
+
+
+
+
+
+
+<!--
+#################################################################
+#################################################################
+-->
+
+<!--
+      <div class="mt-24">
+      <h2 class="text-2xl lg:text-3xl lg:tracking-tight text-center">
+        Core <span class="text-indigo-600 font-bold">Team</span>
+      </h2>
+      <p class="text-lg mt-4 text-slate-600 text-center">
+        Astroship is built by these awesome individuals.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-10 mx-auto mt-12">
+      {
+        publishedTeamMembers.map((teamMemberEntry) => (
+          <div class="group">
+            <div class="w-full aspect-square">
+              <Picture
+                src={teamMemberEntry?.data?.avatar?.src}
+                alt={teamMemberEntry?.data?.avatar?.alt || "Team Member"}
+                loading="lazy"
+                width={400}
+                height={400}
+                formats={["avif", "webp"]}
+                class="w-full h-full object-cover bg-white rounded transition group-hover:-translate-y-1 group-hover:shadow-xl"
+              />
+            </div>
+
+            <div class="mt-4 text-center">
+              <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
+              <h3 class="text-sm text-slate-500">
+                {teamMemberEntry.data.title}
+              </h3>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+ -->
+  </Container>
+  <!--<Cta /> -->
+</Layout>

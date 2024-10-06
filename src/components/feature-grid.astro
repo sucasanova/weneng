@@ -1,0 +1,172 @@
+---
+// @ts-ignore
+import { Picture, Image } from "astro:assets";
+import Card from "@components/card.astro";
+import IntegrationImg from "../assets/integrations.svg?url";
+import FeatureImgOne from "../assets/features/2.png";
+import FeatureImgTwo from "../assets/features/2.png";
+import FeatureImgThree from "../assets/features/3.png";
+import Dashboard from "../assets/features/bashboards.png"
+import Informativos from "../assets/features/imoformativos.png"
+import Publicaciones from "../assets/features/publicaciones.png"
+import Link from "@components/ui/link.astro";
+---
+
+<div class="mt-24">
+  <h2 class="text-2xl lg:text-3xl font-bold lg:tracking-tight">
+    Dashboard <span class="text-indigo-600"> y otros productos informativos </span>
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Productos diseñados para proporcionar información clara, concisa y accionable. Los productos incluyen dashboards interactivos, tableros de control personalizados e informes informativos detallados.
+
+  </p>
+</div>
+
+
+<!-- aqui va lo de comentarios de mas abajo -->
+
+
+<div class="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
+
+    <Card color="indigo" size="sm">
+      <Fragment slot="image">
+        <Picture
+          src={Dashboard}
+          alt="Feature image"
+          formats={["avif", "webp"]}
+          class="h-full w-full object-contain"
+          loading="lazy"
+        />
+      </Fragment>
+      <span slot="badge">#Innovación #Empleo #Comercio Exterior</span>
+      <span slot="title">Dashboard - Tableros de datos interactivos</span>
+      <span slot="desc">
+        Explora datos clave sobre el mercado laboral, la protección al consumidor, la situación empresarial y el comercio exterior peruano. 
+        <br><br>
+      </span>
+      <span slot="desc">
+        <Link href="/blog" size="sm" class="inline-flex items-center group gap-px">
+          <span>Saber más</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
+            <path
+              fill-rule="evenodd"
+              d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </Link>
+      </span>
+    </Card>
+
+  
+  <Card color="purple" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={Informativos}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">#Financiamiento #Salud #Alimentación</span>
+    <span slot="title">Informativos - Evaluaciones de mercado</span>
+    <span slot="desc">
+      Sumérgete en productos de impacto que informan y educan a los consumidores sobre temas clave para mejorar su bienestar.
+      <br><br>
+    </span>
+    <span slot="desc">
+      <Link href="/blog/2" size="sm" class="inline-flex items-center group gap-px">
+        <span>Saber más</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
+          <path
+            fill-rule="evenodd"
+            d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </Link>
+    </span>
+  </Card>
+  
+  
+  <Card size="sm">
+    <Fragment slot="image">
+      <!-- // svg image. cannot use <picture/> as of now -->
+      <Picture
+        src={Publicaciones}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">#Energíasostenible #Empresas #MYPE #PSM</span>
+    <span slot="title">Libros y publicaciones</span>
+    <span slot="desc">
+      Descubre en evaluaciones de impacto del sector energético y las características económicas esenciales de las micro, pequeñas y medianas empresas peruanas del año 2022. 
+    <br><br>
+    </span>
+    <span slot="desc">
+      <Link href="/blog/3" size="sm" class="inline-flex items-center group gap-px">
+        <span>Saber más</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
+          <path
+            fill-rule="evenodd"
+            d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </Link>
+    </span>
+  </Card>
+  
+</div>
+
+<!--
+  <div class="grid md:grid-cols-2 lg:grid-cols-5 mt-16 gap-10">
+  <Card class="lg:col-span-3" color="purple">
+    <Fragment slot="image">
+      <Picture
+        src={Dashboard}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">Productos</span>
+    <span slot="title">Dashboard - Tablero de datos interactivos </span>
+    <span slot="desc">
+      Productos diseñados para proporcionar información clara, concisa y accionable, productos incluyen dashboards interactivos, tableros de control personalizados e informes informativos detallados.
+    </span>
+  </Card>
+
+  <Card class="lg:col-span-2" color="indigo">
+    <Fragment slot="image">
+      <Picture
+        src={Informativos}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">Creative</span>
+    <span slot="title">Next Level Template</span>
+    <span slot="desc">
+      Astroship is a new kind of website template that integrates your favorite
+      tools and workflows.</span
+    >
+  </Card>
+</div>
+ -->

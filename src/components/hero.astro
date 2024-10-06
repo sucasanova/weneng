@@ -1,0 +1,106 @@
+---
+import { Image, Picture } from "astro:assets";
+import heroImage from "../assets/su_hero.webp";
+import Link from "@components/ui/link.astro";
+import Container from "@components/container.astro";
+import video from "../assets/su_hero.mp4";
+import gif from "../assets/su_hero.gif";
+---
+
+<div class="overflow-x-clip">
+  <Container>
+    <style>
+      .typing-animation {
+        overflow: hidden; /* Oculta el texto mientras se está escribiendo */
+        border-right: .07em solid rgb(141, 141, 141); /* Simula el cursor */
+        white-space: nowrap; /* Evita el salto de línea durante la animación */
+        animation: typing 4s steps(40, end) forwards; /* Animación de escritura */
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <main class="grid lg:grid-cols-5 place-items-center relative">
+      <div
+        class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-indigo-200 right-0 top-0">
+      </div>
+      <div
+        class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-purple-200 right-56 top-10">
+      </div>
+
+      <div class="max-w-sm md:max-w-max lg:col-span-2">
+        <h1 class="text-lg mt-4 xl:text-2xl font-bold max-w-lg text-slate-600 [text-wrap:balance] text-center lg:text-start">
+          Hola, soy 
+        </h1>
+        <br>
+        <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center lg:text-start typing-animation">
+          Susana Casanova
+        </h1>
+        <br>
+        <p
+          class="text-lg mt-4 max-w-lg text-slate-600 [text-wrap:balance] text-center lg:text-start ">
+          Una economista y servidora pública apasionada por la innovación y comprometida con el desarrollo sostenible. Mi enfoque está en encontrar soluciones creativas para desafíos complejos, siempre con el objetivo de promover el bienestar de la sociedad. <br> ¡Bienvenido/a a mi página! 
+        </p>
+        <br>
+        <div
+          class="mt-6 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-3 ">
+          <Link
+            href="/about"
+            target="_blank"
+            class="flex gap-1 items-center justify-center"
+            rel="noopener">
+            Más acerca de mi
+          </Link>
+          <Link
+            size="lg"
+            style="outline"
+            rel="noopener"
+            href="/blog"
+            class="flex gap-1 items-center justify-center"
+            target="_blank">
+            Portafolio
+          </Link>
+        </div>
+      </div>
+      <div class="py-3 lg:col-span-3 lg:-mr-44">
+      <!--
+        <Picture
+          src={heroImage}
+          alt="Astronaut in the air"
+          formats={["avif", "webp", "gif"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, heroImage.width]}
+          loading="eager"
+          fetchpriority="high"
+        />
+       -->
+        <img
+          src="https://i.postimg.cc/zG6gYyMy/su-hero.gif"
+          alt="Astronauta en el aire"
+          loading="eager"
+          style={{ maxWidth: "100%", height: "auto" }}
+        />
+       
+        <!-- https://i.postimg.cc/qqNnzhqF/su-hero.webp
+          <video autoplay loop muted class="w-full">
+          <source src={video} type="video/mp4">
+          Tu navegador no soporta el elemento de video.
+        </video>
+         -->
+        
+      
+        
+      </div>
+    </main>
+    
+    <br>
+  </Container>
+
+</div>

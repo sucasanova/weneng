@@ -1,0 +1,43 @@
+---
+import { Icon } from "astro-icon/components";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Button from "@components/ui/button.astro";
+import Contactform from "@components/contactform.astro";
+---
+
+<Layout title="Contact">
+  <Container>
+    <Sectionhead >
+      <Fragment slot="title">Contactos</Fragment>
+      <Fragment slot="desc"> </Fragment>
+    </Sectionhead>
+
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-16">
+      <div>
+        <h2 class="font-medium text-2xl text-gray-800">¡Estamos a un solo clic de distancia!</h2>
+        <p class="text-lg leading-relaxed text-slate-500 mt-3">
+          Explora más sobre mis proyectos y cómo pueden inspirarte. Déjame tu contacto y conectemos.
+        </p>
+        <div class="mt-5">
+          <div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:linkedin" />
+            <a href="https://www.linkedin.com/in/susana-casanova-huiman-4298b8140/"><span>Linkedin</span></a>
+          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" />
+            <a href="mailto:susana.casanova@pucp.pe">
+              susana.casanova@pucp.pe
+            </a>
+          </div><div class="flex items-center mt-2 space-x-2 text-gray-600">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" />
+            <a href="tel:+51 967936011">+51 967936011</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slate-100 p-5 md:p-8 rounded-xl mb-5">
+        <Contactform />
+      </div>
+    </div>
+  </Container>
+</Layout>

@@ -1,0 +1,55 @@
+---
+import { Picture } from "astro:assets";
+import Box from "@components/ui/box.astro";
+import Link from "@components/ui/link.astro";
+const { Descripcion, Titulo, name, image, gif_voceria, url } = Astro.props;
+---
+
+<Box
+  class="w-[calc(100vw-5.75rem)] max-w-md flex flex-col justify-between snap-start snap-always shrink-0 first-of-type:scroll-m-10 scroll-m-5">
+  <!-- <div class="absolute font-serif text-5xl left-2 top-8 text-slate-300 -z-10">
+    “
+  </div> 
+</div> 
+<blockquote class="text-lg md:text-1xl [text-wrap:balance]">{text}</blockquote>
+ -->
+  
+  <img
+    
+    src={gif_voceria}
+    alt={gif_voceria}
+    width="398"
+    height="198"
+    loading="lazy"
+    style="padding-bottom: 10px;"
+  />
+
+  <div>
+      <h1 class="font-medium text-lg" style="padding-bottom: 10px;">{Titulo}</h1>
+      <!--<p class="text-sm text-slate-600">{Descripcion}</p> -->
+      <blockquote class="text-sm md:text-1xl [text-wrap:balance]" >{Descripcion}</blockquote>
+      <br>
+      <span slot="desc">
+        <Link
+            size="sm"
+            style="outline"
+            rel="noopener"
+            href={url}
+            class="inline-flex gap-1  items-center  group "
+           
+            target="_blank">
+            <span>Saber más</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="w-4 h-4 mt-px group-hover:translate-x-1 transition-transform">
+              <path
+                fill-rule="evenodd"
+                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </Link>
+      </span>
+  </div>
+</Box>
