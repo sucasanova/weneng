@@ -1,7 +1,7 @@
 ---
 draft: false
-title: "Comparativo de seguros de protección de tarjeta"
-clase: "Informativos - Evaluaciones de mercado"
+title: "Comparison of Credit Protection Insurance"
+clase: "Informative Reports - Market Assessments"
 descripcion: "Sumérgete en productos de impacto que informan y educan a los consumidores sobre temas clave para mejorar su bienestar"
 
 snippet: "Explore how artificial intelligence is revolutionizing the SaaS industry."
@@ -11,7 +11,7 @@ image:
     alt: "alt text",
   }
 publishDate: "2024-02-01 00:00"
-category: "Informativos y evaluaciones del mercado"
+category: "Informative Reports - Market Assessments"
 author: "Susana Casanova"
 tags: [AI, SaaS]
 ---

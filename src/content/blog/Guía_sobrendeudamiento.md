@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Guía de sobrendeudamiento"
+title: "Over-Indebtedness Guide"
 snippet: "Explore how artificial intelligence is revolutionizing the SaaS industry."
 image:
   {
@@ -8,7 +8,7 @@ image:
     alt: "alt text",
   }
 publishDate: "2024-02-01 00:00"
-category: "Informativos y evaluaciones del mercado"
+category: "Informative Reports - Market Assessments"
 author: "Susana Casanova"
 tags: [AI, SaaS]
 ---

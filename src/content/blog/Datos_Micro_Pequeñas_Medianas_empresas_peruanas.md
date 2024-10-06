@@ -1,7 +1,7 @@
 ---
 draft: false
-title: "Datos de las Micro, Pequeñas y Medianas empresas peruanas"
-clase: "Libros y publicaciones"
+title: "Data on Micro, Small, and Medium Enterprises in Peru"
+clase: "Books and Publications"
 descripcion: "Descubre información esencial y mantente siempre informado con las publicaciones en las que he participado. ¡No te pierdas las novedades más importantes! "
 snippet: "Discover how data analytics can transform your SaaS business and drive growth."
 image:
@@ -10,7 +10,7 @@ image:
     alt: "alt text",
   }
 publishDate: "2024-01-08 11:39"
-category: "Libros y publicaciones"
+category: "Books and Publications"
 author: "Susana Casanova"
 tags: [data, analytics, SaaS]
 ---

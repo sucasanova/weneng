@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Evaluación de impacto de los programas sociales - FISE de Osinergmin"
+title: "Impact Assessment of OSINERGMIN's FISE Social Programs"
 
 snippet: "Discover how data analytics can transform your SaaS business and drive growth."
 image:
@@ -9,7 +9,7 @@ image:
     alt: "alt text",
   }
 publishDate: "2024-01-08 11:39"
-category: "Libros y publicaciones"
+category: "Books and Publications"
 author: "Susana Casanova"
 tags: [data, analytics, SaaS]
 ---

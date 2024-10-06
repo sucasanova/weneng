@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Rastreo de base de mineras Reinfo"
+title: "Tracking Mining Databases - REINFO"
 
 snippet: "Discover how data analytics can transform your SaaS business and drive growth."
 image:
@@ -9,7 +9,7 @@ image:
     alt: "alt text",
   }
 publishDate: "2023-12-08 11:39"
-category: "Scrapping con Python"
+category: "Scrapping with Python"
 author: "Susana Casanova"
 tags: [data, analytics, SaaS]
 ---

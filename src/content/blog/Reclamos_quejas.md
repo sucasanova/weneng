@@ -1,6 +1,6 @@
 ---
 draft: false
-title: "Reclamos y quejas"
+title: "Complaints and Claims"
 
 snippet: "Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti."
 image:
@@ -9,7 +9,7 @@ image:
     alt: "alt text",
   }
 publishDate: "2024-04-01 00:00"
-category: "Dashboard - Tablero de datos interactivos"
+category: "Dashboards - Interactive Data Panels"
 author: "Susana Casanova"
 tags: [webdev, tailwindcss, frontend]
 ---
