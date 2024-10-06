@@ -2,7 +2,7 @@
 draft: false
 title: "Data on Micro, Small, and Medium Enterprises in Peru"
 clase: "Books and Publications"
-descripcion: "Descubre información esencial y mantente siempre informado con las publicaciones en las que he participado. ¡No te pierdas las novedades más importantes! "
+descripcion: "Learn about impact assessments from the energy sector and the economic characteristics of Peru's micro, small, and medium enterprises (MSEs)"
 snippet: "Discover how data analytics can transform your SaaS business and drive growth."
 image:
   {
