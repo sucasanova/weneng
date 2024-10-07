@@ -3,7 +3,7 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { StickyHeader, Astronav, MenuItems, MenuIcon } from "astro-navbar";
-
+import { useState } from 'react';
 const menuitems = [
 {
     title: "Home",
@@ -14,23 +14,18 @@ const menuitems = [
     path: "/about",
   },
   {
-    title: "Portfolio",
+    title: "Portafolio",
     path: "/blog",
   },
   {
     title: "Contact",
     path: "/contact",
   },
-  {
-    title: "|  Español",
-    path: "https://www.susanacasanova.com/",
-  },
-  {
-    title: "|  English",
-    path: "https://weneng.vercel.app/",
-  },
+  
+  
 ];
 ---
+
 
 <StickyHeader
   class="sticky top-0 border-b z-20 transition-all"
@@ -60,8 +55,11 @@ const menuitems = [
             </a> 
           <div class="block lg:hidden">
             <MenuIcon class="w-4 h-4 text-gray-800" />
+            
           </div>
+          
         </div>
+        
         <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
           <ul class="flex flex-col lg:flex-row lg:gap-3">
             {
@@ -90,7 +88,38 @@ const menuitems = [
           </ul>
          
         </MenuItems>
+        <head>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+          <style>
+            .language-icons {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end; /* Alinear a la derecha */
+              gap: 15px; /* Espacio entre íconos */
+              padding: 10px; /* Espaciado interno */
+              font-size: 24px; /* Tamaño de íconos */
+              color: #333; /* Color de íconos */
+            }
+        
+            .language-icons a {
+              text-decoration: none; /* Sin subrayado */
+              color: inherit; /* Hereda el color del contenedor */
+              transition: transform 0.2s; /* Efecto de transición */
+            }
+        
+            .language-icons a:hover {
+              transform: scale(1.1); /* Aumentar tamaño al pasar el mouse */
+            }
+          </style>
+        </head>
+        <body>
+          <div class="language-icons">
+            <a href="https://www.susanacasanova.com/" aria-label="Español">🇪🇸</a>
+            <a href="https://weneng.vercel.app/" aria-label="English">🇺🇸</a>
+          </div>
+        </body>
       </Astronav>
+      
     </div>
   </Container>
 </StickyHeader>
